@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>Minseok&#39;s Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for world-renowned software
+    engineer Ellie"
+    />
+    <meta name="author" content="Ellie" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="엘리의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후에 생성된 이미지 URL" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Javascript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo__img" src="images/김민석.png" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">김민석</a></h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#work">My work</a></li>
+          <li>
+            <a class="header__menu__item" href="#testimonial">Testimonial</a>
+          </li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <div class="home__container">
+          <img
+            class="home__avatar"
+            src="images/김민석.png"
+            alt="Ellie's profile"
+          />
+          <h2 class="home__title">
+            반갑습니다 <br />저는
+            <strong class="home__title--strong">무직백수</strong>, 김민석 입니다
+          </h2>
+          <p class="home__description">
+            후원문의 토스뱅크  1908-8929-8569
+          </p>
+          <a class="home__contact" href="#contact">Contact Me</a>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="about" class="section max-container">
+        <h2 class="title">About me</h2>
+        <p class="description">
+          아직 1학년이라 할 줄 아는게 딱히 없어요. 하지만 후원을 해준다면 감사히 받겠습니다. 혹시 모르죠. 지금 투자해서 나중에 돌려받을지도?
+        </p>
+        <a class="home__contact" href="#contact">후원문의</a>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Front-end</p>
+            <p>HTML, CSS, JavaScript, React</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-mobile major__icon"></i>
+            <p class="major__title">Mobile</p>
+            <p>can play mobile games, can watch youtube with mobile</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">Back-end</p>
+            <p>Java, JavaScript, Go, NodeJs, Rest APIs, GraphQL</p>
+          </li>
+        </ul>
+        <ul class="jobs">
+          <li class="job">
+            <img src="images/알바천국.png" width="70px" height="70px" alt="google logo" />
+            <div>
+              <p class="job__name">무직백수</p>
+              <p class="job__period">2008 June - Until now</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">My Skills</h2>
+          <p class="description">이 사람은 이런 걸 할수 있는!!</p>
+          <p>
+            이런거 배워서 이런것들 합니다
+          </p>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills__title">Coding Skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>league of legends</span><span>100%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>chinese-design</span><span>111%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 111%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>html</span><span>76%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 76%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript</span><span>60%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 60%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>React</span><span>11%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 11%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>NodeJs</span><span>0%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width:0%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>league of legends</li>
+                <li>Android Studio Code</li>
+                <li>Figma</li>
+                <li>Tekken 8</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>Git</li>
+                <li>riot client</li>
+                <li>steam</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Work -->
+      <section id="work" class="section">
+        <div class="max-container">
+          <h2 class="title">My work</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">8</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="front-end">
+                Front-end <span class="category__count">4</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="back-end">
+                Back-end <span class="category__count">2</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="mobile">
+                Mobile <span class="category__count">2</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project1.webp"
+                  alt="project1"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project2.webp"
+                  alt="project2"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #2</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="back-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project3.webp"
+                  alt="project3"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #3</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="mobile">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project4.webp"
+                  alt="project4"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #4</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project5.webp"
+                  alt="project5"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #5</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="back-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project6.webp"
+                  alt="project6"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #6</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="mobile">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project7.webp"
+                  alt="project7"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #7</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project8.webp"
+                  alt="project8"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #8</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section id="testimonial" class="section max-container">
+        <h2 class="title">정말 놀라운!!</h2>
+        <p class="description">이 사람에 대한 놀라운 사실들</p>
+        <ul class="testimonials">
+          <li class="testimonial">
+            <img
+              src="images/배성민.png"
+              alt="people1"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                평소에 많은 친구들과 친하게 지내며 무슨 프로젝트를 하면 친구들을 성공적으로 이끌어줄때가 많다.또 자신이 아는 정보를 친구들과 함께 공유하는점이 멋있고 장점이다.
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">배성민</a>
+                /1-4
+              </p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              src="images/허온.png"
+              alt="people2"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                저는 민석이를 학생 GPT라고 생각합니다. 학교에서 같이 공부하고 생활하면 민석이는 마치 위에서 내려다보는 것과 같이 넓은 지식을 가지고 있습니다. 그리고 옆에 모르는 친구들에게 알려주면서 함께 성장하는 모습이 챗 GPT와 비슷합니다.
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">허온</a>
+                /1-4
+              </p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              src="images/배철환.png"
+              alt="people3"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                민석이는  밝고 긍정적인 에너지를 가진 사람이야. 
+                항상 주변 사람들에게 긍정적인 영향을 주는 에너지를 가지고 있어. 
+                특히, 친구들과의 관계가 뛰어나고, 모두와 잘 어울리며 조화롭게 지내는 모습을 보면 정말 대단해. 
+                앞으로 더욱 더 멋진 친구로 성장할 것으로  기대 하고 있어! 화이팅!
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">배철환 이사님</a>
+                /(주)모비어스
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Arrow up -->
+      <aside>
+        <a class="arrow-up" href="#home" title="back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <h2 class="title">소통해요</h2>
+        <p class="description">kimms99912@gmail.com<br>후원문의 토스뱅크 1908-8929-8569</p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/showtender1"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/showtender1"
+              target="_blank"
+              title="my linkedin link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <p>ⓒ근데 사실 메일 자주 안읽음</p>
+      </div>
+    </footer>
+  </body>
+</html>
