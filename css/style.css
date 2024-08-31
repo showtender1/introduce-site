@@ -13,6 +13,7 @@
   --color-blue: #03e8f9;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
+  --color-accent-variant: #d895e9;
 
   /* Size */
   --size-max-width: 1200px;
@@ -189,58 +190,65 @@ button:focus {
   outline: 2px solid var(--color-accent);
 }
 
-/* About */
+/* About Section */
 .majors {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 2.5rem 0;
 }
 
 .major {
   background-color: var(--color-primary-variant);
-  padding: 2rem 1rem;
+  padding: 2rem;
   color: var(--color-text);
   border-radius: 1rem;
   cursor: default;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+  flex: 1 1 calc(33% - 1rem); /* Allows three items per row with space in between */
 }
 
 .major__icon {
-  font-size: 4rem;
-  margin: 1rem 0;
+  font-size: 3rem;
+  margin-bottom: 1rem;
   color: var(--color-accent);
-  transition: all 300ms ease;
+  transition: transform 300ms ease;
 }
 
 .major__title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.major:hover .major__icon {
-  transform: rotate(-15deg) scale(1.2);
+  margin-bottom: 0.5rem;
 }
 
 .jobs {
   text-align: start;
+  margin-top: 2rem;
 }
 
 .job {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 1rem;
+  gap: 16px;
+  margin-bottom: 1.5rem;
 }
 
 .job__name {
   color: var(--color-primary);
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .job__period {
-  color: var(--color-primary);
-  font-size: 0.8rem;
+  color: var(--color-gray);
+  font-size: 0.9rem;
+}
+
+.job__description {
+  color: var(--color-primary-variant);
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 /* Skills */
@@ -296,14 +304,32 @@ button:focus {
 }
 
 .bar__bg {
-  width: 100%;
-  height: 3px;
-  background-color: var(--color-primary-variant);
+  background-color: var(--color-gray);
+  border-radius: 4px;
+  overflow: hidden;
+  height: 20px;
+  position: relative;
 }
 
 .bar__value {
-  height: 3px;
-  background-color: var(--color-accent);
+  height: 100%;
+  background: linear-gradient(
+      to right,
+      var(--color-accent) 0%, /* 기본 색상 */
+      var(--color-accent) 50%, /* 앞부분 색상 */
+      var(--color-accent-variant) 50%, /* 색상 변경 지점 */
+      var(--color-accent-variant) 100% /* 뒷부분 색상 */
+  );
+  transition: width 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+} 
+
+.bar__metadata {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
 }
 
 /* Work */
