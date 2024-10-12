@@ -2,32 +2,32 @@
 
 const categories = document.querySelector('.categories');
 const projects = document.querySelectorAll('.project');
-const projectsContainer = document.querySelector('.projects');
+
 categories.addEventListener('click', (event) => {
-  const filter = event.target.dataset.category;
-  if (filter == null) {
-    return;
-  }
-  handleActiveSelection(event.target);
+  const target = event.target.closest('button');
+  if (!target) return;
+
+  const filter = target.dataset.category;
+  if (!filter) return;
+  handleActiveSelection(target);
+
   filterProjects(filter);
 });
 
 function handleActiveSelection(target) {
   const active = document.querySelector('.category--selected');
-  active.classList.remove('category--selected');
+  if (active) {
+    active.classList.remove('category--selected');
+  }
   target.classList.add('category--selected');
 }
 
 function filterProjects(filter) {
   projects.forEach((project) => {
-    if (filter === 'all' || filter === project.dataset.type) {
+    if (filter === 'all' || project.dataset.type === filter) {
       project.style.display = 'block';
     } else {
       project.style.display = 'none';
     }
   });
-  projectsContainer.classList.add('anim-out');
-  setTimeout(() => {
-    projectsContainer.classList.remove('anim-out');
-  }, 250);
 }

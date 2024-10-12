@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트 소개 페이지</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#about">프로젝트 소개</a></li>
+                <li><a href="#features">주요 기능</a></li>
+                <li><a href="#contact">문의하기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>지체장애인을 위한 AI 치료 프로그램</h1>
+            <p>AI를 활용한 지체장애인 학습 보조 프로그램</p>
+            <button onclick="scrollToSection('about')">자세히 알아보기</button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>프로젝트 소개</h2>
+        <p>AI를 활용한 지체장애인 학습 보조 프로그램</p>
+    </section>
+
+    <section id="features" class="section">
+        <h2>주요 기능</h2>
+        <ul>
+            <li>AI 기반 미술 치료 세션</li>
+            <li>익명성과 보안을 강화한 상담 시스템</li>
+            <li>사용자 친화적인 인터페이스와 쉬운 접근성</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>문의하기</h2>
+        <form>
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">메시지:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">보내기</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI 미술치료 플랫폼</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
